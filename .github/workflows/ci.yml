@@ -56,9 +56,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Crystal
-        uses: crystal-lang/install-crystal@v1
-        with:
-          crystal: ${{ matrix.crystal_version }}
+      uses: crystal-lang/install-crystal@v1
+      with:
+        crystal: ${{ matrix.crystal_version }}
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
